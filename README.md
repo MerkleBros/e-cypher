@@ -13,5 +13,20 @@ Example of converting an English phrase to `e-cypher`:
 eeeeeeeEeeeeeeeeeeeeeeeeeeEeeeeeEeeeeeEeeeeeeeeeeeeeeE eeeeeEeeeeeeeEeeeeeeeEeeeeeeeeeeeeeeeeeeeE eEeeeeeeeeeeeeeeEeeeeE eeeeeeeeEeEeeeeeeeeeeeeeE
 ```
 
-### ecypher.js
+### Repeating letter cyphers with ecypher.js
 You can make a repeating-letter cypher with other letters besides `e` and with other alphabets besides English using `ecypher.js`.
+
+```
+import * as ecypher from './ecypher.js';
+
+const aCypher = ecypher.buildCypher("abcdefghijklmnopqrstuvwxyz", "a");
+
+console.log(ecypher.encypher("hello", aCypher));
+// Outputs: aaaaaaaaAaaaaaAaaaaaaaaaaaaAaaaaaaaaaaaaAaaaaaaaaaaaaaaaA
+
+console.log(ecypher.decypher(
+  "aaaaaaaaAaaaaaAaaaaaaaaaaaaAaaaaaaaaaaaaAaaaaaaaaaaaaaaaA",
+  aCypher
+));
+// Outputs: hello
+```
