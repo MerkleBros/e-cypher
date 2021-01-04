@@ -11,5 +11,5 @@ Example of converting an English phrase to `e-cypher`:
 eeeeeeeEeeeeeeeeeeeeeeeeeeEeeeeeEeeeeeEeeeeeeeeeeeeeeE eeeeeEeeeeeeeEeeeeeeeEeeeeeeeeeeeeeeeeeeeE eEeeeeeeeeeeeeeeEeeeeE eeeeeeeeEeEeeeeeeeeeeeeeE
 ```
 
-### e-cypher.js
-You can make a repeating-letter cypher with other letters besides `e` and with other alphabets besides English using `e-cypher.js`.
+### ecypher.js
+You can make a repeating-letter cypher with other letters besides `e` and with other alphabets besides English using `ecypher.js`.
